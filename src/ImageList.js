@@ -24,7 +24,7 @@ export default class ImageList extends Component {
         const filteredImages = images.filter((image) => {
 
             if (!this.state.filter) return true;
-            if (image.keyword === this.state.filter) return true;
+            if (image.horns === Number(this.state.filter)) return true;
 
             return false;
         });
@@ -36,8 +36,10 @@ export default class ImageList extends Component {
             <>
                 <select onChange={this.handleChange}>
                     <option value=''>Show All</option>
-                    <option value='one'>One Horn</option>
-                    <option value='two'>Two Horns</option>
+                    <option value="1">One Horn</option>
+                    <option value="2">Two Horns</option>
+                    <option value="3">Three Horns</option>
+                    <option value="100">One Hundred Horns</option>
 
                 </select>
                 <div className="creatures">

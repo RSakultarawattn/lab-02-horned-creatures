@@ -2,6 +2,24 @@
   text-align: center;
 }
 
+.griddy{
+
+  background-color: rgb(204, 73, 25);
+  position: flex;
+  justify-content: center;
+  font-family: papyrus;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: black 2px 2px;
+  color: blue;
+
+}
+img {
+
+  height: 400px;
+  width: 500px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
